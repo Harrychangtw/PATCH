@@ -2,14 +2,16 @@ cff-version: 1.2.0
 title: "PATCH Dataset: Empowering Traditional Chinese Safety Classifiers for Lightweight LLM"
 message: "If you use this dataset, please cite it using the metadata from this file."
 type: dataset
-# TODO: Add author details below. Example format:
-# authors:
-#   - given-names: "First"
-#     family-names: "Last"
-#     affiliation: "University"
-#     orcid: "https://orcid.org/0000-0000-0000-0000"
 authors:
-  - name: "PATCH Authors"
+  - family-names: Chang
+    given-names: Chi-Wei
+    affiliation: "Center of GIS, Academia Sinica; Chingshin Academy"
+  - family-names: Chen
+    given-names: Chiung-Jui
+    affiliation: "Center of GIS, Academia Sinica; Chingshin Academy"
+  - family-names: Tsai
+    given-names: Richard Tzong-Han
+    affiliation: "Center of GIS, Academia Sinica; National Central University"
 license: MIT
 url: "https://github.com/Harrychangtw/PATCH"
 repository-code: "https://github.com/Harrychangtw/PATCH"

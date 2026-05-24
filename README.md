@@ -85,14 +85,7 @@ Attack success rate (ASR) evaluation for Rainbow Teaming prompts is in `patch_rt
 
 If you use PATCH in your research, please cite:
 
-```bibtex
-@inproceedings{patch2025,
-  title={PATCH Dataset: Empowering Traditional Chinese Safety Classifiers for Lightweight LLM},
-  author={TODO_AUTHORS},
-  year={2025},
-  note={Available at \url{https://github.com/Harrychangtw/PATCH}}
-}
-```
+*BibTeX entry will be added once the arXiv preprint is available.*
 
 ## License
 
