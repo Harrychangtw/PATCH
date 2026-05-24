@@ -21,7 +21,7 @@ The following scripts are included:
 Each evaluation script typically performs the following steps:
 
 1.  **Load Model and Tokenizer**: Loads a pre-trained or fine-tuned model and its corresponding tokenizer.
-2.  **Load Dataset**: Loads a dataset (e.g., `patch_test.jsonl`) for evaluation<>.
+2.  **Load Dataset**: Loads a dataset (e.g., `patch_test.jsonl`) for evaluation.
 3.  **Tokenization**: Tokenizes the input texts from the dataset.
 4.  **Inference**: Performs inference on the tokenized dataset in batches.
 5.  **Calculate Metrics**: Computes various evaluation metrics, such as:

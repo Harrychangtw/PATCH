@@ -1,7 +1,7 @@
 # PATCH: Prompt Assortment for Traditional Chinese Hazards
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
+[![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
 [![Dataset on HuggingFace](https://img.shields.io/badge/HuggingFace-Dataset-orange)](TODO_HF_URL)
 
 PATCH is the first large-scale adversarial dataset for Traditional Chinese (TC) LLM safety evaluation. It contains over 820,000 prompts aligned with 13 MLCommons hazard categories, combining synthetic data generation (PATCH-GPT and Rainbow Teaming) with 390 human-annotated prompts (PATCH-H) authored by native TC speakers (Fleiss' kappa = 0.84). PATCH is used to train and evaluate lightweight safety classifiers -- Llama Guard 3 1B, RoBERTa, and Longformer -- via full fine-tuning (FFT) and LoRA, achieving F1 > 0.99 on synthetic data and F1 = 0.87 on human-authored adversarial prompts.
@@ -55,6 +55,8 @@ cd PATCH
 pip install -r requirements.txt
 ```
 
+> **Note:** The root project requires Python 3.9+. The `data_generation/rainbow_teaming_zh/` subproject requires Python 3.12+.
+
 ## Training
 
 Training scripts for all safety classifiers are in `model_training/`. We support both full fine-tuning and LoRA for three architectures:
@@ -80,6 +82,20 @@ PATCH uses two pipelines for generating unsafe prompts:
 ## ASR Evaluation
 
 Attack success rate (ASR) evaluation for Rainbow Teaming prompts is in `patch_rt_asr/`. This measures how effectively adversarial prompts bypass target LLM safety filters.
+
+## Reproducibility Notes
+
+### Dataset Access
+The full PATCH dataset (train/val/test splits) is available on HuggingFace at [TODO_HF_URL]. Training and evaluation scripts expect the data files in the `dataset/` directory.
+
+### Hyperparameters
+All hyperparameters in the training scripts are configured to match those reported in the paper (Tables 10 and 11). Adjust `BATCH_SIZE` based on your available GPU VRAM.
+
+### Weights & Biases (Optional)
+Training scripts support optional W&B logging. Set `WANDB_PROJECT` and `WANDB_ENTITY` environment variables to enable it. If unset, training proceeds without W&B.
+
+### Rainbow Teaming Subproject
+The `data_generation/rainbow_teaming_zh/` directory is a standalone Poetry project requiring Python ≥3.12 and CUDA-capable GPU. See its own README for setup instructions. It is independent of the root `requirements.txt`.
 
 ## Citation
 

@@ -8,7 +8,7 @@ The following scripts are included:
 
 ### Full Fine-Tuning (FFT)
 
-Located in the `full-fine-tune/` directory:
+Located in the `full_finetune/` directory:
 
 - `llamaguard1b_fft.py`: Fine-tunes the LlamaGuard 1B model using FFT.
 - `longformer_fft.py`: Fine-tunes the Longformer model using FFT.
@@ -53,11 +53,11 @@ Also, ensure you have installed the necessary dependencies:
 pip install -r ../requirements.txt
 ```
 
-To run a training script, navigate to the respective subdirectory (`full-fine-tune` or `LoRA`) and execute the desired Python script. For example:
+To run a training script, navigate to the respective subdirectory (`full_finetune` or `LoRA`) and execute the desired Python script. For example:
 
 To run a Full Fine-Tuning script:
 ```bash
-cd full-fine-tune
+cd full_finetune
 python llamaguard1b_fft.py
 ```
 

@@ -24,11 +24,11 @@ Ensure that you install the **CUDA-specific version** of `llama-cpp-python` for 
 
 #### Generation Framework Settings
 
-* Located at: `config/setting.py`
+* Located at: `config/settings.py`
 
 #### Memory Limits (for Model Caching)
 
-Set the following parameters in `config/setting.py`:
+Set the following parameters in `config/settings.py`:
 
 * `VRAM_LIMIT_GB`: Limit for GPU memory usage
 * `SYSTEM_RAM_LIMIT_GB`: Limit for system RAM usage

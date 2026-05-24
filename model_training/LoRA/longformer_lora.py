@@ -49,18 +49,20 @@ def compute_metrics(eval_pred):
     return metrics
 
 def main():
-    project = os.getenv("WANDB_PROJECT")
-    entity  = os.getenv("WANDB_ENTITY")
-    if project is None or entity is None:
-        raise ValueError("Please set both WANDB_PROJECT and WANDB_ENTITY environment variables first!")
+    WANDB_PROJECT = os.getenv("WANDB_PROJECT")
+    WANDB_ENTITY = os.getenv("WANDB_ENTITY")
+    USE_WANDB = WANDB_PROJECT is not None and WANDB_ENTITY is not None
+    if not USE_WANDB:
+        os.environ["WANDB_DISABLED"] = "true"
 
-    output_dir = "../results/Longformer_LoRA_Results" 
+    output_dir = "../results/Longformer_LoRA_Results"
 
-    wandb.init(
-        project=project,
-        entity=entity,
-        dir=output_dir  
-    )
+    if USE_WANDB:
+        wandb.init(
+            project=WANDB_PROJECT,
+            entity=WANDB_ENTITY,
+            dir=output_dir
+        )
     data_files = {
         "train": "../../dataset/patch_train.jsonl",
         "validation": "../../dataset/patch_val.jsonl"
@@ -121,7 +123,7 @@ def main():
         load_best_model_at_end=True,
         metric_for_best_model="f1",
         warmup_steps=500,        
-        report_to=["wandb"],
+        report_to=["wandb"] if USE_WANDB else ["none"],
         run_name="Longformer_LoRA",
     )
 

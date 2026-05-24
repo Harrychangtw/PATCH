@@ -39,6 +39,7 @@ The script is divided into three main operational phases:
         *   Specifically looks for a pattern like `"request": "..."` within the content and extracts the value.
     *   Converts extracted requests from Simplified Chinese to Traditional Chinese using the `OpenCC` library (`s2t` conversion).
     *   Removes duplicate requests within each category.
+    *   **Note:** The primary SC-to-TC conversion tool used for the paper's published dataset is Fanhuaji (zhconvert.org), which performs region-specific terminology adaptation beyond character-level mapping. The OpenCC conversion in this script serves as a lightweight backup alternative.
     *   Saves the final, aggregated, and de-duplicated requests to `final_aggregated_requests.json`.
         *   Attempts to sort the categories numerically (e.g., "T1", "T2") before saving.
     *   Prints a summary of the number of values (requests) aggregated for each category.

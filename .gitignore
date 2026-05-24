@@ -41,3 +41,16 @@ dataset/patch_val.jsonl
 # Data generation artifacts
 data_generation/openai_api/all_completed_outputs.json
 data_generation/openai_api/final_aggregated_requests.json
+
+# ASR evaluation data (hosted on HuggingFace)
+patch_rt_asr/dataset.csv
+
+# Additional data generation artifacts
+data_generation/openai_api/batch_ids.json
+
+# Database files
+*.db
+*.sqlite
+
+# Audit report (not for publication)
+AUDIT_REPORT.md
