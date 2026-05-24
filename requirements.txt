@@ -1,0 +1,11 @@
+accelerate==1.6.0
+scikit-learn==1.6.1
+matplotlib==3.10.1
+transformers==4.48.3
+multiprocess==0.70.16
+datasets==3.5.0
+peft==0.15.2
+tqdm==4.67.1
+wandb==0.19.10
+openai==1.78.0
+OpenCC==1.1.9

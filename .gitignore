@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# ML artifacts
+*.pt
+*.pth
+*.bin
+*.safetensors
+wandb/
+results/
+best_model/
+model/
+checkpoints/
+
+# Environment
+.env
+*.env
+
+# Large dataset files (hosted on HuggingFace)
+dataset/patch.jsonl
+dataset/patch_train.jsonl
+dataset/patch_test.jsonl
+dataset/patch_val.jsonl
+
+# Data generation artifacts
+data_generation/openai_api/all_completed_outputs.json
+data_generation/openai_api/final_aggregated_requests.json

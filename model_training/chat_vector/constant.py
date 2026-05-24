@@ -1,0 +1,6 @@
+LLAMA_BASE = ""
+LLAMA_TW = ""
+LLAMA_GUARD = ""
+CV1 = ""
+CV2 = ""
+BASE_DIR = "../results/chat_vector"
