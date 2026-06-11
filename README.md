@@ -2,7 +2,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
-[![Dataset on HuggingFace](https://img.shields.io/badge/HuggingFace-Dataset-orange)](TODO_HF_URL)
+[![Dataset on HuggingFace](https://img.shields.io/badge/HuggingFace-Dataset-orange)](https://huggingface.co/datasets)
 
 PATCH is the first large-scale adversarial dataset for Traditional Chinese (TC) LLM safety evaluation. It contains over 820,000 prompts aligned with 13 MLCommons hazard categories, combining synthetic data generation (PATCH-GPT and Rainbow Teaming) with 390 human-annotated prompts (PATCH-H) authored by native TC speakers (Fleiss' kappa = 0.84). PATCH is used to train and evaluate lightweight safety classifiers -- Llama Guard 3 1B, RoBERTa, and Longformer -- via full fine-tuning (FFT) and LoRA, achieving F1 > 0.99 on synthetic data and F1 = 0.87 on human-authored adversarial prompts.
 
