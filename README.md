@@ -18,7 +18,7 @@ Unsafe prompts include both direct harmful prompts (PATCH-GPT) and evasive adver
 ## Dataset Access
 
 The full PATCH dataset (train/val/test splits) is hosted on HuggingFace:
-**[TODO_HF_URL](https://huggingface.co/datasets/Raymond102103028/PATCH)**
+**[https://huggingface.co/datasets/Raymond102103028/PATCH]**
 
 A subset of benchmark and evaluation files is included in the `dataset/` directory of this repository for convenience.
 
