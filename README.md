@@ -86,7 +86,7 @@ Attack success rate (ASR) evaluation for Rainbow Teaming prompts is in `patch_rt
 ## Reproducibility Notes
 
 ### Dataset Access
-The full PATCH dataset (train/val/test splits) is available on HuggingFace at [TODO_HF_URL]. Training and evaluation scripts expect the data files in the `dataset/` directory.
+The full PATCH dataset (train/val/test splits) is available on HuggingFace at [https://huggingface.co/datasets/Raymond102103028/PATCH]. Training and evaluation scripts expect the data files in the `dataset/` directory.
 
 ### Hyperparameters
 All hyperparameters in the training scripts are configured to match those reported in the paper (Tables 10 and 11). Adjust `BATCH_SIZE` based on your available GPU VRAM.
