@@ -17,7 +17,7 @@ url: "https://github.com/Harrychangtw/PATCH"
 repository-code: "https://github.com/Harrychangtw/PATCH"
 identifiers:
   - type: url
-    value: "TODO_HF_URL"
+    value: "https://huggingface.co/datasets/Raymond102103028/PATCH"
     description: "HuggingFace dataset"
 date-released: "2025-01-01"
 keywords:

@@ -2,7 +2,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
-[![Dataset on HuggingFace](https://img.shields.io/badge/HuggingFace-Dataset-orange)](TODO_HF_URL)
+[![Dataset on HuggingFace](https://img.shields.io/badge/HuggingFace-Dataset-orange)](https://huggingface.co/datasets/Raymond102103028/PATCH)
 
 PATCH is the first large-scale adversarial dataset for Traditional Chinese (TC) LLM safety evaluation. It contains over 820,000 prompts aligned with 13 MLCommons hazard categories, combining synthetic data generation (PATCH-GPT and Rainbow Teaming) with 390 human-annotated prompts (PATCH-H) authored by native TC speakers (Fleiss' kappa = 0.84). PATCH is used to train and evaluate lightweight safety classifiers -- Llama Guard 3 1B, RoBERTa, and Longformer -- via full fine-tuning (FFT) and LoRA, achieving F1 > 0.99 on synthetic data and F1 = 0.87 on human-authored adversarial prompts.
 
@@ -18,7 +18,7 @@ Unsafe prompts include both direct harmful prompts (PATCH-GPT) and evasive adver
 ## Dataset Access
 
 The full PATCH dataset (train/val/test splits) is hosted on HuggingFace:
-**[TODO_HF_URL](TODO_HF_URL)**
+**[Raymond102103028/PATCH](https://huggingface.co/datasets/Raymond102103028/PATCH)**
 
 A subset of benchmark and evaluation files is included in the `dataset/` directory of this repository for convenience.
 
@@ -86,7 +86,7 @@ Attack success rate (ASR) evaluation for Rainbow Teaming prompts is in `patch_rt
 ## Reproducibility Notes
 
 ### Dataset Access
-The full PATCH dataset (train/val/test splits) is available on HuggingFace at [TODO_HF_URL]. Training and evaluation scripts expect the data files in the `dataset/` directory.
+The full PATCH dataset (train/val/test splits) is available on HuggingFace at [Raymond102103028/PATCH](https://huggingface.co/datasets/Raymond102103028/PATCH). Training and evaluation scripts expect the data files in the `dataset/` directory.
 
 ### Hyperparameters
 All hyperparameters in the training scripts are configured to match those reported in the paper (Tables 10 and 11). Adjust `BATCH_SIZE` based on your available GPU VRAM.

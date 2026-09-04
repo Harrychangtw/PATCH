@@ -4,14 +4,14 @@
 
 The full PATCH dataset, including train/val/test splits for all 820,000+ prompts, is hosted on HuggingFace:
 
-**[TODO_HF_URL](TODO_HF_URL)**
+**[Raymond102103028/PATCH](https://huggingface.co/datasets/Raymond102103028/PATCH)**
 
 To download the full dataset:
 
 ```python
 from datasets import load_dataset
 
-dataset = load_dataset("TODO_HF_URL")
+dataset = load_dataset("Raymond102103028/PATCH")
 ```
 
 ## Benchmark Files (this directory)
@@ -46,11 +46,11 @@ Each file uses JSONL format (one JSON object per line):
    ```python
    from datasets import load_dataset
 
-   dataset = load_dataset("TODO_HF_URL")
+   dataset = load_dataset("Raymond102103028/PATCH")
 
    train = dataset["train"]
    val = dataset["validation"]
    test = dataset["test"]
    ```
 
-3. Alternatively, download files directly from the HuggingFace repository page at [TODO_HF_URL](TODO_HF_URL).
+3. Alternatively, download files directly from the HuggingFace repository page at [Raymond102103028/PATCH](https://huggingface.co/datasets/Raymond102103028/PATCH).
